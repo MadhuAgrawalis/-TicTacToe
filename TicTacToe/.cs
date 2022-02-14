@@ -1,14 +1,17 @@
 ﻿using System;
-using System.Threading;
+using System.Collections.Generic;
+using System.Text;
 
 namespace TicTacToe
 {
-    class Program
+    internal class UC2
     {
-        static char[] arr = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
-        static int player = 1;
-        static int choice;
-        static int flag = 0;
+        
+       
+            static char[] arr = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+            static int player = 1;
+            static int choice;
+            static int flag = 0;
 
         static void Main(string[] args)
         {
@@ -25,13 +28,16 @@ namespace TicTacToe
                 {
                     Console.WriteLine("player 1 chance");
                 }
-                Console.WriteLine("\n");
-               
+
+
+
+
+                
+Console.WriteLine("\n");
+
                 choice = int.Parse(Console.ReadLine());
-                if (arr[choice] != 'X' && arr[choice] != 'o')
-
-
-                {
+                if (arr[choice]) != 'X' && arr[choice] != 'o')
+                   {
                     if (player % 2 == 0)
                     {
                         arr[choice] = 'o';
@@ -44,16 +50,7 @@ namespace TicTacToe
                         player++;
                     }
                 }
-                else
-                {
-                    Console.WriteLine(player);
-                }
+
 
             }
         }
-
-    }
-}
-        
-    
-
